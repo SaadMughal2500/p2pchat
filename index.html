@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Chat</title>
+
+<script src="node_modules/socket.io/client-dist/socket.io.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+
+<h2>Secure Chat</h2>
+
+<p>Please enter user ID to contact with: </p>
+<input id="userId" type="text">
+<br><br>
+
+<button id = "openMedia">Open Media Devices</button>
+<button id = "call">Call</button>
+<button id = "accept">Recieve</button>
+<button id = "hangUp"> Hang Up</button>
+
+<div>
+    <video id="localVideo" muted autoplay></video>
+    <video id="remoteVideo" autoplay ></video>    
+</div>
+
+<p id = "remoteCandidates"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
